@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Good Capture Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: #1d2d44;
+      background-color: #f0f7f9;
+    }
+
+    .navbar {
+      border-bottom: 1px solid #d0e5ec;
+      background-color: rgba(255, 255, 255, 0.95) !important;
+      backdrop-filter: blur(5px);
+    }
+    .navbar-brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      color: #0b4f6c !important; 
+    }
+    .nav-link {
+      font-size: 13px;
+      letter-spacing: 1.5px;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: #577590 !important;
+    }
+    .nav-link.active, .nav-link:hover {
+      color: #00a896 !important; 
+    }
+
+    .hero {
+      padding: 100px 0 50px;
+      text-align: center;
+      background: radial-gradient(circle at top, #e0f2f1 0%, #f0f7f9 70%);
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      font-weight: bold;
+      color: #0b4f6c;
+      margin-bottom: 10px;
+    }
+    .hero h2 {
+      font-size: 18px;
+      font-style: italic;
+      color: #00a896; 
+      margin-bottom: 15px;
+      font-weight: 400;
+    }
+    .hero p {
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #7ba1a8;
+      font-weight: 600;
+    }
+
+    .filter-btns {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 30px;
+    }
+    .filter-btns .btn {
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      padding: 6px 18px;
+      border-radius: 30px;
+      border: 1px solid #b5e2fa;
+      color: #495057;
+      background: white;
+      transition: all 0.3s ease;
+    }
+    .filter-btns .btn:hover {
+      background: #e0f2f1;
+      border-color: #00a896;
+      color: #00a896;
+    }
+    .filter-btns .btn.active {
+      background: #0b4f6c;
+      color: white;
+      border-color: #0b4f6c;
+      box-shadow: 0 4px 15px rgba(11, 79, 108, 0.2);
+    }
+
+    .photo-grid {
+      padding: 0 40px;
+    }
+    .photo-grid .col {
+      padding: 4px;
+    }
+    .photo-grid img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+      border-radius: 6px;
+      transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    .photo-grid img:hover {
+      filter: saturate(115%);
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(11, 79, 108, 0.2);
+    }
+
+    footer {
+      text-align: center;
+      padding: 50px 0 30px;
+      margin-top: 60px;
+      background-color: #0b4f6c; 
+      color: #e0f2f1;
+    }
+    footer .brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 6px;
+      color: #ffffff;
+    }
+    footer .copyright {
+      font-size: 12px;
+      color: #a3c4cf;
+      margin-bottom: 18px;
+    }
+    footer .social-icons a {
+      color: #a3c4cf;
+      font-size: 18px;
+      margin: 0 8px;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    footer .social-icons a:hover {
+      color: #00a896;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top px-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><i class="bi bi-camera me-2"></i>Good Capture</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">The Journey</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Galleries</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <h1>Hi, Hello.. I Am Lilis</h1>
+    <h2>Collecting stories hidden beneath the waves.</h2>
+    <p>Ocean Lover • Dreamy Captures • Cinematic Mood</p>
+  </div>
+
+ <div class="filter-btns">
+   <button class="btn active">All Stories</button>
+   <button class="btn">Blue Horizon</button>
+   <button class="btn">Ocean Depths</button>
+   <button class="btn">Sea Creatures</button>
+ </div>
+
+  <div class="container-fluid photo-grid">
+    <div class="row row-cols-2 row-cols-md-4 g-2">
+      <!-- Baris 1 -->
+      <div class="col"><img src="https://images.pexels.com/photos/17823670/pexels-photo-17823670.jpeg" alt="Life in the Depths"></div>
+      <div class="col"><img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=500&q=80" alt="Rhythms of Nature"></div>
+      <div class="col"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=500&q=80" alt="Edge of the World"></div>
+      <div class="col"><img src="https://images.unsplash.com/photo-1439405326854-014607f694d7?auto=format&fit=crop&w=500&q=80" alt="Infinite Deep"></div>
+      <!-- Baris 2 -->
+      <div class="col"><img src="https://images.unsplash.com/photo-1546026423-cc4642628d2b?auto=format&fit=crop&w=500&q=80" alt="Coral reefs"></div>
+      <div class="col"><img src="https://images.pexels.com/photos/7316200/pexels-photo-7316200.jpeg" alt="Dolphins"></div>
+      <div class="col"><img src="https://images.pexels.com/photos/4338170/pexels-photo-4338170.jpeg" alt="shipr"></div>
+      <div class="col"><img src="https://images.pexels.com/photos/4324773/pexels-photo-4324773.jpeg" alt="starfish"></div>
+      <!-- Baris 3 -->
+      <div class="col"><img src="https://images.unsplash.com/photo-1551244072-5d12893278ab?auto=format&fit=crop&w=500&q=80" alt="Turtle Journey"></div>
+      <div class="col"><img src="https://images.pexels.com/photos/4618218/pexels-photo-4618218.jpeg" alt="Coral reefs"></div>
+      <div class="col"><img src="https://images.unsplash.com/photo-1513553404607-988bf2703777?auto=format&fit=crop&w=500&q=80" alt="Sunset View"></div>
+      <div class="col"><img src="https://images.pexels.com/photos/17404270/pexels-photo-17404270.jpeg" alt="Crystal Clear"></div>
+      <!-- Baris 4 -->
+      <div class="col"><img src="https://images.pexels.com/photos/33392582/pexels-photo-33392582.jpeg" alt="whale"></div>
+      <div class="col"><img src="https://images.pexels.com/photos/34392861/pexels-photo-34392861.jpeg" alt="whale"></div>
+      <div class="col"><img src="https://images.pexels.com/photos/17356229/pexels-photo-17356229.jpeg" alt="Coral reefs"></div>
+      <div class="col"><img src="https://images.pexels.com/photos/28456036/pexels-photo-28456036.jpeg" alt="Ocean"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p class="brand"><i class="bi bi-camera me-2"></i>Good Capture</p>
+    <p class="copyright">© Copyright 2026. Good Capture Collective.</p>
+    <div class="social-icons">
+      <a href="#"><i class="bi bi-instagram"></i></a>
+      <a href="#"><i class="bi bi-threads"></i></a>
+      <a href="#"><i class="bi bi-vimeo"></i></a>
+      <a href="#"><i class="bi bi-youtube"></i></a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    const btns = document.querySelectorAll('.filter-btns .btn');
+    btns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        btns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+  </script>
+
+</body>
+</html>
